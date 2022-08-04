@@ -1,0 +1,16 @@
+C++의 string은 C에는 정의되어 있지 않은 타입이다. 그렇기에 C의 printf 함수에는 string에 대한 옵션이 없다. 따라서 printf를 사용해 string 변수를 출력하고 싶다면 string을 C-Style 로 변환해줄 필요가 있다. 변환 방법은 다음과 같다.
+
+printf("%s", temp.c_str());
+string 변수에서 c_str() 메소드를 호출해주면 됨.
+
+unique 함수는 연속으로 중복 되는 원소 를 vector의 제일 뒷부분으로 쓰레기 값으로 보낸다. 즉 다시 말해 중복 되지 않는 원소들 만을 앞에서 부터 채운다.
+
+ ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    얘네 쓰면 입출력 많을때 시간 감소.
+
+iterator 받을때 auto 변수로 선언해서 받으면 편함
+물론 idx값으로 즉 정수형으로 쓰려면 begin값 빼줘야 함
+
+@@18870 vector의 메소드를 알면 편하게 풀 수 있음. @@
