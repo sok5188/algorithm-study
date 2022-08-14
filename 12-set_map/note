@@ -1,0 +1,4 @@
+set, map의 find 와  그리고 auto it로 iterator를 활용하여 분류 및 탐색 할 수 있음
+map의 첫인자가 key 그러니까 key값 기준으로 정렬이된다..
+distance() advance()도 여기서 처음 알게됨.
+11478같이 그냥 set map 레퍼함수 쓰는 것 말고도 11478_1처럼 짱구굴려서 시간 줄일수있는 방법이 있다.
