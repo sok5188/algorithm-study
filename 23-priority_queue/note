@@ -1,0 +1,11 @@
+우선순위 큐는 max heap으로 구현하여 사용한다. 최악의 경우에도 Ologn을 보장하기 때문.
+
+11286 >> 분명 heap으로 뭐pair를 사용해서 이렇게 저렇게하면 구현가능할것같음..
+근데, queue헤더에 priority_queue를 쓰고 비교함수를 default로 주고 그냥 pair로 abs값이랑 원래값이랑 같이 넣어 주면 알아서
+앞에놈 기준으로 정렬하고 같으면 뒤엣놈기준으로 정렬된다.. !
+
+1655 >> max heap과 min heap을 두고 max heap 의 max를 min heap의 min값보다 작거나 같게끔 설정함.
+그리고 max힙의 크기를 min힙의 크기보다 하나 크거나 같도록 설정 >> 항상 max힙의 top이 가운데값이됨 왜냐? max힙의 top보다 작은애들은 top밑에 n-1개 존재
+min힙의 경우 max힙의 top보다 큰 애들이 힙에 n개 or n-1개 존재 (max힙의 크기가 n)
+따라서 2n일때 가운데 값은 min힙의 top 혹은 max힙의 top인데 이 둘중 작은놈이 max힙의 탑이니 위의 방법이 맞게되고
+2n-1일때는 max힙에 top보다 작은값이 n-1개 min힙에 top보다 큰값이 n-1개 이므로 중앙값이 max의 탑이되므로 위의방법이 맞게된다 !
