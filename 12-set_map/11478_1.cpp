@@ -1,7 +1,7 @@
 #include <iostream>
 #include <set>
 using namespace std;
- 
+//인터넷 참고한 코드
 int main() {
     string s;
     cin >> s;
